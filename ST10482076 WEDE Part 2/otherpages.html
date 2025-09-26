@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubuntu Youth Empowerment</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Ubuntu Youth</div>
+    <div class="nav-links">
+      <a href="HOME.html" class="active">HOME</a>
+      <a href="PRODUCTS.html">PRODUCTS</a>
+      <a href="SOLUTION.html">SOLUTION</a>
+      <a href="RESOURCES.html">RESOURCES</a>
+      <a href="OTHER PAGES.html">OTHER PAGES</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Empowering the Next Generation</h1>
+      <p>Ubuntu Youth Empowerment is dedicated to uplifting and transforming the lives of young people through education, mentorship, and community initiatives.</p>
+      <a href="#contact" class="btn">Get Involved</a>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <h2>Our Mission & Vision</h2>
+    <p>We strive to build a future where youth are confident, capable, and empowered to lead. Our dedicated team works together to implement impactful programs with transparency and accountability.</p>
+  </section>
+
+  <!-- Programs -->
+  <section class="programs">
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Education & Skills</h3>
+        <p>Providing access to education, workshops, and training programs to equip youth with skills for the future.</p>
+      </div>
+      <div class="card">
+        <h3>Mentorship</h3>
+        <p>Connecting youth with experienced mentors to guide them in personal and professional growth.</p>
+      </div>
+      <div class="card">
+        <h3>Community Projects</h3>
+        <p>Engaging youth in community-driven initiatives to foster leadership and social responsibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Success Stories</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"Thanks to Ubuntu Youth Empowerment, I gained the confidence and skills to start my own community project."</p>
+        <strong>- Thabo M.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"The mentorship program helped me excel in my studies and pursue my career goals."</p>
+        <strong>- Naledi P.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Being part of community initiatives showed me the power of teamwork and giving back."</p>
+        <strong>- Sipho K.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact & Get Involved</h2>
+    <p>Whether you’d like to volunteer, donate, or partner with us, we welcome your support.</p>
+    <ul class="contact-info">
+      <li><strong>Phone:</strong> +27 234 4564</li>
+      <li><strong>Instagram:</strong> <a href="https://instagram.com/ubuntu.yc" target="_blank">@ubuntu.yc</a></li>
+      <li><strong>Facebook:</strong> <a href="https://facebook.com/ubuntu.yc" target="_blank">@ubuntu.yc</a></li>
+      <li><strong>Twitter/X:</strong> <a href="https://twitter.com/ubuntu.yc" target="_blank">@ubuntu.yc</a></li>
+    </ul>
+
+    <!-- Newsletter -->
+    <form class="newsletter">
+      <input type="email" placeholder="Your email" required>
+      <button class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ubuntu Youth Empowerment. All rights reserved.</p>
+    <div class="social-icons">
+      <!-- Icons same as before -->
+    </div>
+  </footer>
+
+  <script>
+    // Simple testimonial slider
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    setInterval(() => {
+      testimonials[currentTestimonial].classList.remove('active');
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      testimonials[currentTestimonial].classList.add('active');
+    }, 5000);
+  </script>
+</body>
+</html>
